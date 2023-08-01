@@ -1,0 +1,396 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+/* Home Section Styles */
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image2.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+#home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #ff3366;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #d6224b;
+}
+
+/* Slider Section Styles */
+/* About Us Section Styles */
+#about {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Services Section Styles */
+/* ... (Your existing styles) ... */
+
+/* Services Section Styles */
+#services {
+  text-align: center;
+  padding: 100px 0;
+}
+
+#services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Service Boxes Styles */
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service-box {
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 16px;
+}
+
+/* Hover Effect */
+.service-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Job Listings Section Styles */
+/* ... (Your existing styles) ... */
+
+/* Job Listings Section Styles */
+/* ... (Your existing styles) ... */
+
+/* Job Listings Section Styles */
+#jobs {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#jobs h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Job Card Styles */
+.job-listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.job-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow: hidden;
+  background-color: #e1f5fe;
+  transition: transform 0.3s;
+}
+
+.job-card img {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.job-card h3 {
+  font-size: 24px;
+  margin-top: 25px;
+}
+
+.job-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.view-button {
+  display: inline-block;
+  background-color: #ff3366;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.view-button:hover {
+  background-color: #d6224b;
+}
+
+/* Animated Hover Effect */
+.job-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff3366;
+  opacity: 0.5;
+  z-index: -1;
+  transition: top 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-10px);
+}
+
+.job-card:hover::before {
+  top: 0;
+}
+
+
+/* ... (Your existing styles) ... */
+
+/* Contact Us Section Styles */
+/* ... (Your existing styles) ... */
+
+/* Contact Us Section Styles */
+#contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('pexels-photo-5198252.webp');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  display: inline-block;
+  background-color: #ff3366;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #d6224b;
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+  #home h1 {
+      font-size: 36px;
+  }
+
+  #home p {
+      font-size: 18px;
+  }
+
+  .cta-btn {
+      padding: 10px 20px;
+  }
+
+  #about h2,
+  #services h2,
+  #jobs h2,
+  #contact h2 {
+      font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #home h1 {
+      font-size: 24px;
+  }
+
+  #home p {
+      font-size: 16px;
+      margin-bottom: 30px;
+  }
+
+  .cta-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+
+  nav .logo {
+      font-size: 20px;
+  }
+
+  nav ul li {
+      margin-left: 10px;
+  }
+
+  #about h2,
+  #services h2,
+  #jobs h2,
+  #contact h2 {
+      font-size: 26px;
+  }
+
+  .slider-container {
+      max-width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .service-boxes {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service-box {
+      max-width: 90%;
+  }
+}
+
+
+
+
+
+
